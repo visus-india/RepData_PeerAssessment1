@@ -6,9 +6,7 @@ output: html_document
 ---
 ```{r}
 # Clear the workspace
-
 rm(list=ls())
-
 # Load the raw activity data
 activity_raw <- read.csv("c:/coursera/data/activity.csv", stringsAsFactors=FALSE)
 
@@ -166,7 +164,6 @@ median(sum_data$total)
 ```
 These values differ greatly from the estimates from the first part of the assignment. The impact of imputing the missing values is to have more data, hence to obtain a bigger mean and median value.
 
-
 ## Are there differences in activity patterns between weekdays and weekends?
 For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.
 
@@ -175,7 +172,6 @@ For this part the weekdays() function may be of some help here. Use the dataset 
 # The new factor variable "daytype" was already in the activity data frame
 head(activity)
 ```
-
 2. Make a panel plot containing a time series plot (i.e. type = "l") of the 5- minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).
 
 ```{r}
